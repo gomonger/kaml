@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: foobar
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: foo
+  namespace: foobar
+  labels:
+    foo: bar
+spec:
+  stuff: "foo"
